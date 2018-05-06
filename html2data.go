@@ -110,7 +110,7 @@ func (doc Doc) getDataFromDocOrSelection(docOrSelection docOrSelection, selector
 	return result, err
 }
 
-var htmlAttrRe = regexp.MustCompile(`^\s*(\w+)\s*(?:\(\s*(\w+)\s*\))?\s*$`)
+var htmlAttrRe = regexp.MustCompile(`^\s*(\w+-?\w+-?\w+)\s*(?:\(\s*(\w+-?\w+-?\w+)\s*\))?\s*$`)
 
 // parseSelector - parse pseudo-selectors:
 // :attr(href) - for getting attribute instead text node
